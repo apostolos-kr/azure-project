@@ -33,8 +33,6 @@ jobs:
       run: |
         pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/api'
         dotnet build --configuration Release --output ./output
-        ls output
-        ls output/GetResumeCounter
         popd
     
     - name: 'Run unit test'
@@ -45,7 +43,6 @@ jobs:
     
     - name: 'Run Azure Functions action'
       uses: Azure/functions-action@v1
-      #id: fa
       with:
         app-name: ${{ env.AZURE_FUNCTIONAPP_NAME }}
         package: '${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/api/output'
