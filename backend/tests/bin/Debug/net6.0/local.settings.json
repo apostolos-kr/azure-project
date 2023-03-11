@@ -1,0 +1,13 @@
+{
+  "IsEncrypted": false,
+  "Values": 
+  {
+    "AzureWebJobsStorage": "",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "AzureResumeConnectionString":"AccountEndpoint=https://apostolos-azure-resume.documents.azure.com:443/;AccountKey=0Ez9Zc6rDJ47QaK2euwWDqihVf91y3NGMidasGWUc8VFonM4am8DSsgIm7jK4a4CTDbO3fSVjSHIACDbfFO72g==;"
+  },
+  "Host":
+  {
+    "CORS": "*"
+  }
+}
