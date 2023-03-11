@@ -34,6 +34,7 @@ jobs:
         pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/api'
         dotnet build --configuration Release --output ./output
         ls output
+        ls output/GetResumeCounter
         popd
     
     - name: 'Run unit test'
